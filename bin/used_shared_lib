@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require 'used_shared_lib'
+
+if Helpers.fail?
+  FailUsedSharedLib.puts("Hello, World from glibc!")
+else
+  UsedSharedLib.puts("Hello, World from glibc!")
+end
